@@ -1,0 +1,63 @@
+.card-container{
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    width: 343px;
+    height: 251px;
+}
+
+.card{
+    position: absolute;
+    width: 286px;
+    height: 157px;
+    background-size: cover;
+
+    &__cvc,
+    &__logo, 
+    &__number,
+    &__user-info{
+        position: absolute;
+        left: 19px;
+    }
+
+    &__logo{
+        width: 54px;
+        top: 17px;
+    }
+
+    &__number{
+        top: 84px;
+        font-size: 18px;
+    }
+
+    &__user-info{
+        top: 124px;
+        left: 0;
+        padding-inline: 17px;
+        display: flex;
+        width: 100%;
+        font-size: 9px;
+    }
+
+    &__date{
+        margin-left: auto;
+    }
+
+    &__cvc{
+        top: 73px;
+        left: 229px;
+        font-size: 9px;
+    }
+
+    &--front{
+        top: 94px;
+        left: 0;
+        background-image: url(./Assets/images/bg-card-front.png);
+    }
+
+    &--back{
+        top: 0;
+        right: 0;
+        background-image: url(./Assets/images/bg-card-back.png);
+    }
+}
